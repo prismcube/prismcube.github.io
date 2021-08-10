@@ -29,6 +29,11 @@ This is an attempt to allow to build images for this dead box again.
 
 # How to build:
 
+Prepare a vm with a quite old linux installation (a debian wheezy could be ok)
+
 Download https://prismcube.github.io/files/Makefile
+
+# make 
+
 
 
