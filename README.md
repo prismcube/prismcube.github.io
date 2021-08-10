@@ -31,12 +31,12 @@ This is an attempt to allow to build images for this dead box again.
 
 Prepare a vm with a quite old linux installation (a debian wheezy could be ok) 
 ..or install into chroot
-$ sudo debootstrap --arch=amd64 --keyring=/usr/share/keyrings/debian-archive-removed-keys.gpg wheezy chroot http://archive.debian.org/debian
+$ sudo debootstrap --arch=amd64 --keyring=/usr/share/keyrings/debian-archive-removed-keys.gpg wheezy chroot http://archive.debian.org/debian  
 $ sudo mount -o bind /dev chroot/dev  
 $ sudo mount -o bind /proc chroot/proc  
 $ sudo mount -o bind /sys chroot/sys  
 $ sudo mkdir chroot/prismcube  
-$ sudo chown  777 chroot/prismcube  
+$ sudo chown $(id -u):$(id -g) chroot/prismcube  
 
 Download https://prismcube.github.io/files/Makefile
 
