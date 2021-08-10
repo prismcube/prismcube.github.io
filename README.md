@@ -37,7 +37,8 @@ sudo mount -o bind /dev wheezy/dev
 sudo mount -o bind /proc wheezy/proc  
 sudo mount -o bind /sys wheezy/sys  
 sudo mkdir wheezy/prismcube  
-chroot wheezy
+sudo chroot wheezy
+apt-get install build-essential git
 
 Download https://prismcube.github.io/files/Makefile
 
