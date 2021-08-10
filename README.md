@@ -39,6 +39,7 @@ sudo mount -o bind /sys wheezy/sys
 sudo mkdir wheezy/prismcube  
 sudo chroot wheezy
 apt-get install build-essential git gawk
+DEBIAN_FRONTEND=noninteractive dpkg-reconfigure dash
 
 Download https://prismcube.github.io/files/Makefile
 
