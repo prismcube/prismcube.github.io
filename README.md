@@ -34,12 +34,14 @@ Prepare a vm with a quite old linux installation (a debian wheezy could be ok)
 
 sudo debootstrap --arch=i386 --keyring=/usr/share/keyrings/debian-archive-removed-keys.gpg wheezy wheezy http://archive.debian.org/debian  
 sudo mount -o bind /dev wheezy/dev  
+sudo mount -o bind /dev/shm wheezy/shm  
+sudo mount -o bind /dev/pts wheezy/pts  
 sudo mount -o bind /proc wheezy/proc  
 sudo mount -o bind /sys wheezy/sys  
 sudo mkdir wheezy/prismcube  
 sudo chroot wheezy
-apt-get install build-essential git gawk python
-DEBIAN_FRONTEND=noninteractive dpkg-reconfigure dash
+apt-get install build-essential git gawk python diffstat makeinfo chrpath  
+DEBIAN_FRONTEND=noninteractive dpkg-reconfigure dash  
 
 Download https://prismcube.github.io/files/Makefile
 
