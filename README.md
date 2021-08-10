@@ -37,6 +37,7 @@ $ sudo mount -o bind /proc chroot/proc
 $ sudo mount -o bind /sys chroot/sys  
 $ sudo mkdir chroot/prismcube  
 $ sudo chown $(id -u):$(id -g) chroot/prismcube  
+$ chroot chroot
 
 Download https://prismcube.github.io/files/Makefile
 
