@@ -11,7 +11,7 @@ The Prismcube was not an Enigma2 based receiver like most of the stb in the mark
 
 Prismcube Ruby was a satellite tv only receiver with twin fixed DVB-S2 tuners. The hardware is pretty basic which also is reflected in the price. We are not talking high end here.
 
-Key Features on the Prismcube Ruby:
+Key Features on the Prismcube Ruby:  
   CPU: PNX8496-1250DMIPS  
   4Gb * 8bit (Only 512mb of Ram available)  
   Easy option to fit Internal SATA HDD 2.5  
