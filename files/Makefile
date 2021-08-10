@@ -15,7 +15,7 @@ TARGET?=elmo
 SILENT?=@
 SUPPORT=elmo
 BRANCH?=angstrom-v2012.12-yocto1.3
-REPOSITORY?=git://update.prismcube.com/setup-script.git
+REPOSITORY?=git://github.com/prismcube/setup-script.git
 
 RM=rm -Rf
 GIT=git
