@@ -38,7 +38,7 @@ sudo mount -o bind /proc wheezy/proc
 sudo mount -o bind /sys wheezy/sys  
 sudo mkdir wheezy/prismcube  
 sudo chroot wheezy
-apt-get install build-essential git gawk
+apt-get install build-essential git gawk python
 DEBIAN_FRONTEND=noninteractive dpkg-reconfigure dash
 
 Download https://prismcube.github.io/files/Makefile
