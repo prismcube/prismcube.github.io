@@ -33,7 +33,11 @@ Prepare a vm with a quite old linux installation (a debian wheezy could be ok)
 
 Download https://prismcube.github.io/files/Makefile
 
-# make 
+To build the development branch:
+$ make BRANCH=angstrom-v2012.12-yocto1.3-dev
+
+To build the release branch (untested):
+$ make  
 
 
 
