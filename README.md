@@ -27,4 +27,8 @@ WiFI built in
 
 This is an attempt to allow to build images for this dead box again.
 
+# How to build:
+
+Download https://prismcube.github.io/files/Makefile
+
 
