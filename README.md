@@ -29,12 +29,19 @@ This is an attempt to allow to build images for this dead box again.
 
 # How to build:
 
-Prepare a vm with a quite old linux installation (a debian wheezy could be ok)
+Prepare a vm with a quite old linux installation (a debian wheezy could be ok) 
+..or install into chroot
+$ sudo debootstrap --keyring=/usr/share/keyrings/debian-archive-removed-keys.gpg wheezy chroot http://archive.debian.org/debian
+$ sudo mount -o bind /dev chroot/dev
+$ sudo mount -o bind /proc chroot/proc
+$ sudo mount -o bind /sys chroot/sys
+$ sudo mkdir chroot/prismcube
+$ sudo chown  777 chroot/prismcube
 
 Download https://prismcube.github.io/files/Makefile
 
 To build the development branch:
-$ make BRANCH=angstrom-v2012.12-yocto1.3-dev
+$ make BRANCH=angstrom-v2012.12-yocto1.3-dev  
 
 To build the release branch (untested):
 $ make  
